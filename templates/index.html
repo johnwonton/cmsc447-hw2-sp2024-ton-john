@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+{% block body %}
+<h3 class='text-center text-muted'>[CMSC447 SP2024 Allgood]</h3>
+<h4 class="lead text-center text-muted mb-4 border"> HW 2: Student CRUD Application</h4>
+<table class='table table-bordered table-striped table-hover'>
+    <thead class = "table-primary">
+        <th class="lead">Name</th>
+        <th class="lead">Id</th>
+        <th class="lead">Points</th>
+        <th class="lead">Edit</th>
+        <th class="lead">Delete</th>
+    </thead>
+
+    <tbody>
+        {% for row in datas %}
+        <tr>
+            <td>{{row.Name}}</td>
+            <td>{{row.Id}}</td>
+            <td>{{row.Points}}</td>
+            <td><a href='{{url_for("edit_user",Id=row.Id)}}' class='btn btn-outline-primary'><i
+                        class="bi bi-person-fill-gear p-1"></i>Edit</a></td>
+            <td><a href='{{url_for("delete_user",Id=row.Id)}}' class='btn btn-outline-danger'
+                    onclick='return confirm("Confirm student entry deletion?")'><i
+                        class="bi bi-person-fill-dash p-1"></i>Delete</a></td>
+        </tr>
+        {%endfor%}
+    </tbody>
+</table>
+<p class='text-right'><a href='{{url_for("add_user")}}' class='btn btn-outline-success mt-2 mx-2 col-md-12' m><i
+            class="bi bi-person-fill-add p-1"></i>Add New Student</a></p>
+{% endblock %}
