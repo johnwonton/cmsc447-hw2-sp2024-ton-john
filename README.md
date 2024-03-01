@@ -13,6 +13,7 @@ To run the Student CRUD Application for Allgood's CMSC447 HW2, follow the steps 
 
 [How to use HW2]
 1. Now that you're at the main page, you'll be greeted with a table with a button that allows you to add a student.
+
 1a. When clicking on the button that allows you to add a student, it'll take you to another page where you can put in a student's name, id, and points. Click the "Submit" button when you're done in order to add it to the table.
 
 2. Once you have a valid entry in the table, you'll see that particular student's information as well as two additional buttons to edit or delete their student record.
