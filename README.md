@@ -1,4 +1,4 @@
-To run the Student CRUD Application for Allgood's CMSC447 HW2, follow the steps below:
+To run the Student CRUD Application for Allgood's CMSC447 HW2, follow the steps below if you're running Windows:
 
 [How to run HW2]
 1. Travel to the HW2 directory via the terminal once you've downloaded the files
